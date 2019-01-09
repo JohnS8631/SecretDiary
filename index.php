@@ -1,7 +1,10 @@
+<?php ob_start();  ?> 
+
 <?php
 
-
+   
    session_start();
+   
 
    $error = "";
    
@@ -131,7 +134,7 @@
                             }
                    
                     
-                            header ("Location: loggedinpage.php");
+                           
                             
                             
                             
@@ -255,11 +258,6 @@
 
 </div>
 
+
 <?php include ("footer.php"); ?>
-        
-
-
-
-
-
-
+<?php  ob_flush(); ?>
